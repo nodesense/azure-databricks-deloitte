@@ -1,0 +1,31 @@
+```
+create containers in synapse attached adls
+containers 
+    customers
+    products
+    invoices
+
+
+in notepad, 
+
+create 2 csv files 
+
+    customer-list1.csv
+    
+    CustomerID,Country,Gender,Age
+    17850,United Kingdom,F,35
+
+    customer-list2.csv
+
+    CustomerID,Country,Gender,Age
+    12662,Germany,M,45
+    
+
+    upload this into container customers
+
+    Create external table, don't mention individual file, instead select / whole diretory
+
+    columns 
+
+    CustomerID,Country,Gender,Age
+```
