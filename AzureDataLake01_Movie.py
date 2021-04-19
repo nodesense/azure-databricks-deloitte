@@ -141,7 +141,7 @@ df.printSchema()
 
 spark.conf.set(
 "spark.hadoop.fs.azure.account.key.syndbstorage.blob.core.windows.net",
-"wFYpOfw+DhPYRbqAtFiovloFbE1YNUWrcesO5MG16O9Nse02/JfxVmC3jH0EQloL6v3OUotxkUU+k5Ee7mwTyw==")
+"wFYpOfw+/Jfx ")
 
 
 
