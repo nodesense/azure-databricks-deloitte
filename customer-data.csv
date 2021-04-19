@@ -5,6 +5,7 @@ containers
     products
     invoices
 
+    invoices-parquet
 
 in notepad, 
 
