@@ -55,3 +55,34 @@ invoicesDf\
 
 
 ```
+
+
+# partition specific
+
+```python
+# partition, logical parition of the data
+# parition by country code
+
+output_file_path = 'abfss://invoices-parquet-countrywise@gksynapsestorage.dfs.core.windows.net/invoices-countrywise-01.parquet'
+
+invoicesDf\
+.write\
+.partitionBy("Country")\
+.mode("overwrite")\
+.parquet(output_file_path)
+
+```
+
+# multiple partitions
+
+```python
+
+output_file_path = 'abfss://invoices-parquet-countrywise@gksynapsestorage.dfs.core.windows.net/invoices-datewise-countrywise-01.parquet'
+
+invoicesDf\
+.write\
+.partitionBy("Country", "InvoiceDate")\
+.mode("overwrite")\
+.parquet(output_file_path)
+
+```
