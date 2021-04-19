@@ -26,3 +26,15 @@ CREATE EXTERNAL TABLE ratings (userId INT,
 
 SELECT * from ratings;
 ```
+
+
+### now run joins on native table and external table 
+
+```sql
+SELECT * from ratings;
+
+select * from movies;
+
+SELECT title, rating from ratings r inner join movies m on r.movieId=m.movieId;
+```sql
+ 
